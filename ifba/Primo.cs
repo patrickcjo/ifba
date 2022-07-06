@@ -44,7 +44,7 @@ namespace ifba
 
         public int QntPrimos(int entrada)
         {
-            var primos = 0;
+            
             for (int i = 0; i <= entrada; i++)
             {
                 if (ONumeroEPrimo(i) == true)

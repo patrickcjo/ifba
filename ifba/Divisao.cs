@@ -13,16 +13,20 @@ namespace ifba
         public int quociente { get; set; }
         public int resto { get; set; }
 
-        public int CalcularDivisao()
+        public int CalcularDivisao(int dividendo_, int divisor_)
         {
+
+            dividendo = dividendo_;
+            divisor = divisor_;
             quociente = dividendo / divisor;
             return quociente;
         }
 
 
-        public int CalcularResto()
+        public int CalcularResto(int dividendo_, int divisor_)
         {
-            
+            divisor = divisor_;
+            dividendo = dividendo_;
             resto = dividendo % divisor;
             return resto;
         }

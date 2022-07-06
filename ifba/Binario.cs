@@ -28,8 +28,8 @@ namespace ifba
             div.dividendo = entrada;
             while (div.dividendo >= 2)
             {
-                binarioPrivada.Add(div.CalcularResto());
-                div.dividendo = div.CalcularDivisao();
+                binarioPrivada.Add(div.CalcularResto(div.dividendo,div.divisor));
+                div.dividendo = div.CalcularDivisao(div.dividendo, div.divisor);
 
                 if (div.dividendo < div.divisor)
                 {
