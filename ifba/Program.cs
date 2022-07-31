@@ -2,3 +2,4 @@
 using ifba;
 
 Console.WriteLine("Hello, World!");
+Excel.LerExcel();

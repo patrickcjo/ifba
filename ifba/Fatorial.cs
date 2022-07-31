@@ -19,14 +19,22 @@ namespace ifba
 
         public int CalcFatorial(int resultado)
         {
-            for (int i = 0; i < n; i++)
+            n = resultado;
+            if (resultado == 0 || resultado == 1)
             {
-                resultado = n * (n - 1);
-                fatorial = resultado;
+                return 1;
+            }
+            else if (resultado < 0)
+            {
+                throw new SystemException("Fatorial nao pode ser menor que 0 animal");
+            }
+            for (int i = resultado; i > 1; i--)
+            {
+                n = n * (i - 1);
+                n*= (i - 1);
             }
 
-            return resultado;
+            return n;
         }
-
     }
 }
