@@ -8,7 +8,7 @@ namespace ifba
 {
 
     //*converter string em array de inteiros
-    
+
     public class Numeros
     {
         public Numeros()
@@ -23,7 +23,5 @@ namespace ifba
             var resultado = Math.Pow(meuarray[0], 2) + Math.Pow(meuarray[1], 2) + Math.Pow(meuarray[2], 2);
             return Convert.ToInt32(resultado);
         }
-
-
     }
 }
