@@ -8,11 +8,6 @@ namespace ifba
 {
     public class PA
     {
-
-        public int razao { get; set; }
-        public int qnt { get; set; }
-        public int n1 { get; set; }
-
         public PA()
         {
 
@@ -20,9 +15,12 @@ namespace ifba
 
         public void CalcularPA(List<int> minhalista)
         {
-            for (int i = 0; i < qnt; i++)
+            for (int i = 0; i < minhalista[i]; i++)
             {
-                razao=
+                if (
+                {
+
+                }
             }
         }
     }
