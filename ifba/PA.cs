@@ -8,20 +8,33 @@ namespace ifba
 {
     public class PA
     {
+
+        public int razao { get; set; }
+        public bool ehpa { get; set; }
         public PA()
         {
 
         }
 
-        public void CalcularPA(List<int> minhalista)
+        public bool CalcularPA(List<int> minhalista)
         {
-            for (int i = 0; i < minhalista[i]; i++)
+            razao = minhalista[1] - minhalista[0];
+            for (int i = 0; i < minhalista.Count; i++)
             {
-                if (
+                if (i+1 < minhalista.Count)
                 {
-
+                    if (razao == (minhalista[i + 1] - minhalista[i]))
+                    {
+                        ehpa = true;
+                    }
+                    else
+                    {
+                        ehpa = false;
+                        return ehpa;
+                    }
                 }
             }
+            return ehpa;
         }
     }
 }
